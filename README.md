@@ -1,0 +1,11 @@
+## ১. PostgreSQL কি?
+
+PostgreSQL হলো একটা অবজেক্ট-রিলেশনাল ডাটাবেস ম্যানেজমেন্ট সিস্টেম (ORDBMS) যা ওপেন সোর্স আর ফ্রি! এইটা ১৯৮৬ সালে ইউনিভার্সিটি অফ ক্যালেফোর্নিয়াতে প্রফেসর মাইকেল স্টোনব্রেকার আর তার টিমের দ্বারা ডেভেলপ করা হয়েছিল। PostgreSQL অন্য ডাটাবেসগুলার চেয়ে অনেক বেশি ফিচার রিচ। এইটা শুধু রিলেশনাল ডাটাবেস না, এইটা অবজেক্ট-রিলেশনাল। মানে আপনি এইখানে কাস্টম ডাটা টাইপ বানাইতে পারবেন, এমনকি JSON ডাটাও স্টোর করতে পারবেন।
+
+### PostgreSQL কেন অন্য relational database গুলার চেয়ে আলাদা?
+
+Object-oriented features গুলা কি কি? PostgreSQL এর object-oriented features দিয়ে programmers পারে database servers এর সাথে objects ব্যবহার করে communicate করতে, complex custom data types define করতে, নিজেদের data types এর জন্য functions define করতে, আর tables এর মধ্যে inheritance বা parent-child relationships define করতে। এইসব ফিচার গুলা PostgreSQL কে অন্য relational database গুলার থেকে আলাদা করে।
+
+এইটার মানে হইলো PostgreSQL এর ডিজাইন অন্য relational database এর চেয়ে অনেক বেশি flexible। আপনি existing database system এর ভিতরেই different relationships আর types model করতে পারবেন, আপনার এপ্লিকেশন কোডে externally করতে হবে না। Database performance improve হয় আর consistency maintain হয় কারণ intended behavior actual data এর কাছেই enforce করা হয়।
+
+PostgreSQL আসলে একটা enterprise-grade সলিউশন যেটা ছোট স্টার্টআপ থেকে শুরু করে বড় কর্পোরেশন পর্যন্ত সবাই ব্যবহার করতে পারে। এর flexibility, robustness, আর community support এর কারণে এটা মডার্ন এপ্লিকেশনের জন্য দারুণ চয়েস!
