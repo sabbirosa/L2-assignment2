@@ -90,3 +90,11 @@ SELECT sighting_id,
     END AS time_of_day
 FROM sightings
 ORDER BY sighting_id;
+
+-- Task 9
+DELETE FROM rangers
+WHERE ranger_id NOT IN (
+    SELECT DISTINCT ranger_id
+    FROM sightings
+    WHERE ranger_id IS NOT NULL
+);
