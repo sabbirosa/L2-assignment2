@@ -54,3 +54,10 @@ FROM sightings;
 SELECT sighting_id, species_id, ranger_id, location, sighting_time, notes
 FROM sightings
 WHERE location LIKE '%Pass%';
+
+-- Task 4
+SELECT r.name, COUNT(s.sighting_id) AS total_sightings
+FROM rangers r
+INNER JOIN sightings s ON r.ranger_id = s.ranger_id
+GROUP BY r.ranger_id, r.name
+ORDER BY r.name;
