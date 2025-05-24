@@ -61,3 +61,9 @@ FROM rangers r
 INNER JOIN sightings s ON r.ranger_id = s.ranger_id
 GROUP BY r.ranger_id, r.name
 ORDER BY r.name;
+
+-- Task 5
+SELECT sp.common_name
+FROM species sp
+LEFT JOIN sightings s ON sp.species_id = s.species_id
+WHERE s.species_id IS NULL;
