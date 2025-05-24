@@ -49,3 +49,8 @@ INSERT INTO rangers (name, region) VALUES ('Derek Fox', 'Coastal Plains');
 -- Task 2
 SELECT COUNT(DISTINCT species_id) AS unique_species_count
 FROM sightings;
+
+-- Task 3
+SELECT sighting_id, species_id, ranger_id, location, sighting_time, notes
+FROM sightings
+WHERE location LIKE '%Pass%';
